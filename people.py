@@ -1,5 +1,4 @@
 # 人事資料管理系統
-
 # 匯入所需模組
 from tabulate import tabulate
 
@@ -28,7 +27,7 @@ def add_record():
             break
 
 
-def search_record():
+def query_record():
     search_name = input("請輸入要查詢的姓名: ")
     found = False
     for record in records:
@@ -139,7 +138,7 @@ def delete_record():
             break
     if not found:
         print("查無此人")
-    display_records()
+    display_records();
 
 
 def display_records():
@@ -169,7 +168,7 @@ def main():
         if choice == "1":
             add_record()
         elif choice == "2":
-            search_record()
+            query_record()
         elif choice == "3":
             modify_record()
         elif choice == "4":
