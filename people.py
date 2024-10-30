@@ -163,7 +163,7 @@ def main():
         print("4. 刪除資料")
         print("5. 顯示所有資料")
         print("6. 退出系統")
-        choice = input("請選擇功能(1-6): ")
+        choice = input("請選擇功能: ")
 
         if choice == "1":
             add_record()
